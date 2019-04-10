@@ -41,10 +41,10 @@
   cursor: pointer;
 }
 .menu {
-  display: none;
+  transition: all 0.4s;
   position: fixed;
   top: 75px;
-  left: 0;
+  left: -355px;
   width: 350px;
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
@@ -63,9 +63,11 @@
 }
 .menu--open {
   display: block;
+  left: 0px;
 }
 .articles {
   margin-top: 95px;
+  transition: all 0.4s;
 }
 .article {
   margin: 20px 10%;
@@ -107,6 +109,9 @@
   height: 400px;
   overflow-y: scroll;
   transition: all 0.3s;
+}
+.article-slide {
+  transform: translateX(355px);
 }
 html,
 body {
