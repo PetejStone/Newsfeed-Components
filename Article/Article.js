@@ -16,6 +16,13 @@ class Article {
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
     this.article.classList.toggle('article-open');
+    this.article.scrollTop = 0; // scrolls back to top so content isn't showing when closed
+    this.expandButton.style.position = 'relative'; //sets position to relative since box size is changing, pushes button to bottom
+    this.expandButton.textContent = 'close' //sets text to close
+    if ( this.article.className !== 'article article-open') { //checks if the article-open class is off when expand is clicked
+      this.expandButton.style.position = 'absolute'; //if above is true, set postion back to absolute so button is back to original position
+      this.expandButton.textContent = 'expand';//sets text back to expand
+    }
   }
 }
 
