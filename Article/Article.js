@@ -25,6 +25,14 @@ class Article {
     }
   }
 }
+//
+// class NewArticle extends Article {
+//   constructor(article) {
+//     super(article);
+//
+//   }
+// }
+
 
 /* START HERE:
 
