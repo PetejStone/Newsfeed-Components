@@ -1,5 +1,6 @@
 .articles {
   margin-top: 95px;
+  transition: all .4s;
 }
 .article {
   margin: 20px 10%;
@@ -11,7 +12,7 @@
   height: 50px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
-
+  transition: all .3s;
   h2 {
     font-size: 28px;
     padding: 0;
@@ -43,8 +44,10 @@
 
 .article-open {
   height: 400px;
+  overflow-y: scroll;
+  transition: all .3s;
 }
 
-
-
-
+.article-slide {
+  transform: translateX(355px);
+}
